@@ -1,0 +1,70 @@
+.challenge {
+   padding: 0px 0px 100px 0px;
+   // .challenge__container
+
+   &__container {
+   }
+
+   // .challenge__statistick
+
+   &__statistick {
+      margin: 0px 0px 80px 0px;
+   }
+
+   // .challenge__title
+
+   &__title {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 35px;
+      color: #ffffff;
+      margin: 0px 0px 50px 0px;
+   }
+
+   // .challenge__text
+
+   &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #929292;
+      margin: 0px 0px 45px 0px;
+      // .challenge__text_first
+
+      &_first {
+      }
+
+      // .challenge__text_second
+
+      &_second {
+      }
+   }
+
+   // .challenge__subtitle
+
+   &__subtitle {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffffff;
+      margin: 0px 0px 30px 0px;
+   }
+
+   // .challenge__markered-list
+
+   &__markered-list {
+      border-top: 1px solid #929292;
+      padding: 60px 0px 0px 0px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #929292;
+   }
+
+   // .challenge__markered-item
+
+   &__markered-item {
+		list-style:initial;
+		margin: 0px 0px 0px 17px;
+   }
+}

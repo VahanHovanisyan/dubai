@@ -1,0 +1,108 @@
+.container {
+   max-width: 1110px;
+   margin: 0px auto;
+}
+
+.small-container {
+   max-width: 730px;
+   margin: 0px auto;
+}
+.logo {
+}
+
+.menu {
+}
+
+.title {
+   font-family: "Gilroy";
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 69px;
+   color: #fff;
+}
+
+.statistick {
+   display: flex;
+	@media(max-width:767.98px){
+		flex-direction:column;
+		align-items: center;
+	}
+   // .statistick__item
+
+   &__item {
+      display: flex;
+      align-items: center;
+      flex: 0 1 33.333%;
+		@media(max-width:767.98px){
+			margin: 0px 0px 20px 0px;
+		}
+   }
+
+   // .statistick__number
+
+   &__number {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 70px;
+      color: #fcd54c;
+      margin: 0px 25px 0px 0px;
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+      // .statistick__number_plus
+
+      &_plus {
+			margin: 0px 35px 0px 0px;
+			position: relative;
+         &::after {
+            content: "+";
+            font-size: 30px;
+            line-height: 35px;
+				position: absolute;
+				top: 0;
+         }
+      }
+   }
+
+   // .statistick__text
+
+   &__text {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      color: #ffffff;
+      max-width: 95px;
+   }
+}
+
+.socials {
+   // .socials__list
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+   }
+
+   // .socials__item
+
+   &__item {
+      margin: 0px 20px 20px 0px;
+   }
+
+   // .socials__link
+
+   &__link {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+		svg{
+			width: 15px;
+			height: 15px;
+			fill: #fff;
+			&:hover{
+				fill: #fcd54c;
+			}
+		}
+      
+   }
+}

@@ -1,0 +1,221 @@
+
+
+
+.projects {
+   // .projects__container
+
+   &__container {
+   }
+
+   // .projects__header
+
+   &__header {
+      display: flex;
+      align-items: center;
+      padding: 70px 0px;
+      justify-content: space-between;
+		color: #fff;
+      @media (max-width: 767.98px) {
+         align-items: stretch;
+         flex-direction: column;
+      }
+   }
+
+   // .projects__title
+
+   &__title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 69px;
+		color: #fff;
+		@media (max-width: 767.98px) {
+         font-weight: 700;
+         font-size: 30px;
+         line-height: 37px;
+         flex-direction: column;
+         align-self: start;
+         margin: 0px 0px 20px 0px;
+      }
+
+   }
+
+   // .projects__header-list
+
+   &__header-list {
+		display: flex;
+      font-family: "Work-Sans";
+      @media (max-width: 767.98px) {
+         justify-content: space-between;
+      }
+   }
+
+   // .projects__header-item
+
+   &__header-item {
+		margin: 0px 30px 0px 0px;
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+      @media (max-width: 767.98px) {
+         margin: 0px 15px 0px 0px;
+      }
+   }
+
+   // .projects__header-link
+
+   &__header-link {
+		font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      color: #fff;
+      @media (min-width: 767.98px) {
+         &:hover {
+            color: #fcd54c;
+         }
+         font-weight: 600;
+         font-size: 12px;
+         line-height: 14px;
+      }
+      // .projects__header-link_opacity
+
+      &_opacity {
+			opacity: 0.5;
+      }
+   }
+
+   // .projects__slider-block
+
+   &__slider-block {
+		.swiper-pagination{
+			position: static;
+			margin: 100px 0px 0px 0px;
+		}
+		.swiper-pagination-bullet{
+			width: 13px;
+			height: 13px;
+			background-color: #fcd54c;
+		}
+   }
+
+   // .projects__slide
+
+   &__slide {
+		//flex: 0 1 500px;
+		max-width: 450px;
+      height: 450px;
+      text-align: center;
+      position: relative;
+		&:hover {
+         .projects__slide-title {
+            display: none;
+         }
+         .projects__hover-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            height: 100%;
+         }
+      }
+      @media (max-width: 991px) {
+         height: 250px;
+      }
+      @media (max-width: 767.98px) {
+         height: 230px;
+      }
+		
+      // .projects__slide_1
+
+      &_1 {
+			background: url(../img/1.jpg) 50%/ cover no-repeat;
+      }
+
+      // .projects__slide_2
+
+      &_2 {
+			background: url(../img/2.jpg) 50%/ cover no-repeat;
+      }
+
+      // .projects__slide_3
+
+      &_3 {
+			background: url(../img/3.jpg) 50%/ cover no-repeat;
+      }
+
+      // .projects__slide_4
+
+      &_4 {
+			background: url(../img/4.jpg) 50%/ cover no-repeat;
+      }
+   }
+
+   // .projects__slide-title
+
+   &__slide-title {
+      font-family: "Gilroy";
+      position: absolute;
+      left: 15px;
+      bottom: 25px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #fff;
+   }
+
+   // .projects__hover-slide
+
+   &__hover-slide {
+      display: none;
+      background-color: #fcd54c;
+      color: #272727;
+      padding: 0px 15px;
+      font-family: "Work-Sans";
+   }
+
+   // .projects__hover-slide-title
+
+   &__hover-slide-title {
+		font-weight: 700;
+      font-size: 32px;
+      line-height: 45px;
+      font-family: "Gilroy";
+		@media(max-width:991.98px){
+			font-size: 28px;
+         line-height: 22px;
+		}
+   }
+
+   // .projects__hover-slide-descr
+
+   &__hover-slide-descr {
+		text-align: left;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+		@media(max-width:991.98px){
+			font-size: 20px;
+         line-height: 14px;
+         height: 150px;
+         overflow: auto;
+		}
+		@media(max-width:576.98px){
+			font-size: 15px;
+         height: 100px;
+		}
+   }
+
+   // .projects__hover-slide-link
+
+   &__hover-slide-link {
+		font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+		@media(max-width:991.98px){
+			font-size: 18px;
+         line-height: 14px;
+		}
+		@media(max-width:576.98px){
+			font-size: 15px;
+		}
+   }
+}

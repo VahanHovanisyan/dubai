@@ -1,0 +1,35 @@
+@import "_null-style";
+@import "_fonts";
+@import "_repeat-class";
+@import "_icon-fonts";
+@import "_header";
+@import "_main";
+@import "main-sections/_welcome";
+@import "main-sections/_projects";
+@import "main-sections/_expertise";
+@import "main-sections/_achieve";
+@import "main-sections/_contact";
+@import "main-sections/_articles";
+@import "main-sections/_feedback";
+@import "main-sections/_faq";
+@import "services-main-sections/apartaments";
+@import "services-main-sections/rent";
+@import "services-main-sections/methods";
+@import "services-main-sections/dubai-images";
+@import "services-main-sections/challenge";
+@import "services-main-sections/package";
+@import "services-main-sections/articles_propos";
+@import "contact-main-sections/contact-map";
+@import "_footer";
+
+.wrapper{
+	max-width: 1920px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto;
+	overflow: hidden;
+	background-color: #272727;
+	padding: 0px 20px;
+	font-family: "Work-Sans";
+}
